@@ -1,9 +1,8 @@
 import pymysql
 
-sql = 'SELECT * FROM students WHERE age >= 20'
-
-db = pymysql.connect(host='localhost', user='root', password=None, port=3306, db='spiders')
+db = pymysql.connect(host='localhost', user='root', password='jojo123456', port=3306, db='spiders')
 cursor = db.cursor()
+sql = 'SELECT * FROM students WHERE age >= 20'
 try:
     cursor.execute(sql)
     print('Count:', cursor.rowcount)
@@ -16,7 +15,7 @@ try:
         print(row)
 except:
     print('Error')
-    
+
 sql = 'SELECT * FROM students WHERE age >= 20'
 try:
     cursor.execute(sql)

@@ -6,7 +6,7 @@ user = 'Bob'
 age = 20
 
 db = pymysql.connect(host='localhost', user='root',
-                     password=None, port=3306, db='spiders')
+                     password='jojo123456', port=3306, db='spiders')
 cursor = db.cursor()
 sql = 'INSERT INTO students(id, name, age) values(%s, %s, %s)'
 try:
