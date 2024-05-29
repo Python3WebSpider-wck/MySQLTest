@@ -1,6 +1,6 @@
 import pymysql
 
-db = pymysql.connect(host='localhost', user='root', password='jojo123456', port=3306, db='spiders')
+db = pymysql.connect(host='localhost', user='root', password='jojo123456', port=3306, db='spider')
 cursor = db.cursor()
 sql = 'SELECT * FROM students WHERE age >= 20'
 try:
